@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        int n, m = 0, k,i;
+
+        System.out.print("Sayi giriniz :");
+        n = inp.nextInt();
+
+        if (n > 1) {
+
+            for (i = 1; i < n; i++){
+
+                if (n % i==0){
+
+                    m += i;
+
+                    if(n==m){
+                        System.out.println(m+ "mukemmel");
+                     } else {
+                        System.out.println(m+ "mükemmel degil");
+                    }
+                     }
+                }
+
+        }else {
+            System.out.println("mükemmel degil");
+        }
+} }
+
+
